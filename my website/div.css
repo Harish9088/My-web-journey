@@ -1,0 +1,47 @@
+header {
+	border: 2px solid black;
+margin: 3px;
+}
+nav {
+border: 2px solid black;
+margin: 3px;
+}
+main {
+	display: flex;
+border: 2px solid black;
+margin: 0px;
+padding: 0px;
+width: px;
+
+}
+section {
+	border: 2px solid black;
+width: 65%;
+height: 300px;
+float: left;
+background-color: red;
+margin: %;
+}
+aside {
+border: 2px solid black;
+margin: 3px;
+width: 35%;
+height: 300px;
+float: right;
+margin: %;
+background-color: orange;
+}
+footer {
+border: 2px solid black;
+margin: 3px;
+
+height: 50;
+background-color:yellow;
+}
+body {
+	text-align: center;
+	text-transform: capitalize;
+	padding: 0px;
+	margin: 0px;
+
+}
