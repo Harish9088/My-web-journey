@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>experiment</title>
+	<style>
+		body {
+			background-color:#6b120d;
+		}
+         #h1 {
+        	margin-left:390px;
+        	font-size: 50px;
+        	color:#1ea0bd;
+        	text-decoration:underline;
+        }
+
+		#num {
+			border:2px solid black;
+			width:200px;
+			text-align:center;
+			background-color:aqua;
+			font-size: 40px;
+			padding:5px	;
+		}
+		header {
+			margin-left:500px;
+		}
+		div {
+			margin-left:400px;
+		}
+		button {
+			padding:10px;
+			text-transform:capitalize;
+			font-size: 20px;
+		}
+		 #back {background-color:red;}
+		 #middle {background-color:blue;}
+		 #next {background-color:green;}
+
+	</style>
+ </head>
+ <body>
+	<header>
+      <h1 id="num">0</h1>
+    </header>
+  <div>
+  	<button id="back">previous value</button>
+    <button id="middle">reset</button>
+    <button id="next">preceding value</button>
+  </div>  
+
+
+	<h1 id="h1">SIMPLE COUNTER</h1>
+
+
+  <script>
+  	
+
+  	 document.addEventListener("DOMContentLoaded",function () {
+
+  	 
+  	 	var i=0;
+  	 	document.querySelector("#middle").onclick=function () {
+  	 		i=0;
+  	 		document.querySelector("h1").innerHTML=i;
+
+  	 	};
+  	 	document.querySelector("#back").onclick=function () {
+  	 		i--;
+  	 		document.querySelector("h1").innerHTML=i;
+
+  	 	};
+  	 	document.querySelector("#next").onclick=function () {
+  	 		i++;
+  	 		document.querySelector("h1").innerHTML=i;
+
+  	 	};
+  	 	
+  	 
+  	 });
+      console.log()
+  </script>  
+
+ </body>
+</html>
