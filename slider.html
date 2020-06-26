@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slider</title>
+	<style>
+		body {
+			margin:0px;
+			padding:0px;
+			background-color:#d1dded;
+		}
+		h1 {
+			text-align: center;
+			font-family: helvetica,verdana;
+			font-weight: bold;
+			font-size: 60px;
+
+		}
+		#img {
+			width:650px;
+			height:350px;
+			border:1px solid blue;
+			margin-left: 350px;
+			border-radius: 5px;
+		}
+		img {
+			width:650px;
+			height:350px;
+		}
+
+        #text {
+        	text-align:center;
+        	margin:10px;
+        }
+        span {
+        	padding:3px;
+        	font-family: helvetica;
+        	letter-spacing:3px;
+        	cursor: default;
+        }
+        span:hover {
+        	border: 1px solid #dec02c;
+        	width:40px;
+        	pointer-events: 
+        	
+        }
+
+	</style>
+</head>
+<body>
+  <header>
+  	<h1>SLIDER</h1>
+  </header>
+  <section>
+  	<div id="img"><img src="cosmos1.jpg" id="pic"></div>
+  	<div id="text"><span id="prev" onclick="revert()"></span>&nbsp<span id="next" onclick="change()">Next</span></div>
+  </section>
+
+   <script>
+   	function change() {
+   		var val="prev";
+   		document.getElementById("prev").innerHTML=val;
+       var arr={img1:"cosmos1.jpg",
+                 img2:"cosmos2.jpg"} ;
+       document.getElementById("pic").src="cosmos2.jpg";
+       document.getElementById("pic")=arr.img1;
+
+      // box.setAttribute="cosmos1.jpg";
+     //  document.getElementById("img")=box;  	
+   	}
+   	function revert() {
+   		document.getElementById("pic").src="cosmos1.jpg";
+   		document.getElementById("prev").innerHTML="";
+   	}
+
+   </script>
+
+</body>
+</html>
