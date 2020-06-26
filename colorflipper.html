@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COLOR FLIPPER</title>
+	<style>
+		body {
+			margin:0px;
+			background-color: ;
+		}
+		h1 {
+			text-align: center;
+			font-family: helvertia;
+			text-transform:capitalize;
+			font-size:70px;
+		}
+		button {
+			margin-left:600px;
+			margin-top:100px;
+			border-radius:5px;
+			width:150px;
+			height:40px;
+			font-size: 20px;
+			padding:5px;
+			background-color: transparent;
+		}
+		button:hover {
+			color:white;
+			background-color: black;
+		}
+	</style>
+</head>
+<body id="body">
+	<div>
+		<h1>COLOR FLIPPER</h1>
+		<button id="click" onclick="change()">Click Me</button>
+    </div>
+
+
+    <script>
+    	
+    	var i=0;
+        function change() {
+        	
+    	
+    		var screen=document.getElementById("body");
+    		var color=["#106e0d","#b0390e","#1d1e63","#6e0e23"];
+    			screen.style.backgroundColor=color[i];
+    			i=(i+1)%color.length;
+    		
+    		}
+    		
+    		var interval=setInterval(change,1000);
+    		
+
+    //to start interval comment out clear interval function	
+   clearInterval(interval);
+    </script>
+</body>
+</html>
